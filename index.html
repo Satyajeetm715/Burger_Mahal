@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Mahal - Order Delicious Burgers Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="E:\BurgerOrder\images\logo.png" alt="Burger Mahal Logo">
+            <h1>Burger Mahal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" id="cart-link"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Delicious Burgers Delivered to Your Door</h2>
+            <p>Order now and get 25% off your first order!</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="daily-special">
+        <div class="special-badge">Today's Special</div>
+        <div class="special-content">
+            <h2>Spicy Chicken Maharaja Burger</h2>
+            <p>Extra large chicken patty with special masala, cheese, and mint mayo</p>
+            <div class="price">₹199 <span class="original-price">₹299</span></div>
+            <button class="btn special-order-btn">Order Now</button>
+            <div class="offer-timer">Offer ends in: 05:32:17</div>
+        </div>
+        <img src="E:\BurgerOrder\images\chicken-maharaja-burger.jpg" alt="Today's Special Burger" class="special-image">
+    </section>
+
+
+
+
+
+
+
+
+    <section class="offers">
+        <h2>Weekend Special Offers</h2>
+        <div class="offer-cards">
+            <div class="offer-card">
+                <div class="offer-badge">30% OFF</div>
+                <h3>Combo Meal</h3>
+                <p>1 Burger + Fries + Drink</p>
+                <div class="price">₹199 <span class="original-price">₹299</span></div>
+            </div>
+            <!-- Add more offer cards -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="c:\Users\Satyajeet Mishra\Downloads\classic-veg-burger.jpg" alt="Classic Burger">
+                <h3>Classic Veg Burger</h3>
+                <p>Vegetable patty, lettuce, tomato, onion, and our special sauce</p>
+                <div class="price">₹99</div>
+                <button class="add-to-cart" data-id="1" data-name="Classic Veg Burger" data-price="99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="E:\BurgerOrder\images\cheese-burger.jpg" alt="Cheese Burger">
+                <h3>Cheese Burger</h3>
+                <p>Vegetable patty, Amul cheese, pickles, onion, ketchup, and mustard</p>
+                <div class="price">₹129</div>
+                <button class="add-to-cart" data-id="2" data-name="Cheese Burger" data-price="129">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="E:\BurgerOrder\images\spicy-masala-burger.jpg" alt="Spicy Burger">
+                <h3>Spicy Masala Burger</h3>
+                <p>Spicy vegetable patty, mint chutney, onions, and Indian spices</p>
+                <div class="price">₹149</div>
+                <button class="add-to-cart" data-id="3" data-name="Spicy Masala Burger" data-price="149">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="E:\BurgerOrder\images\chicken-burger.jpg" alt="Chicken Burger">
+                <h3>Chicken Burger</h3>
+                <p>Grilled chicken patty, lettuce, mayo, and special spices</p>
+                <div class="price">₹179</div>
+                <button class="add-to-cart" data-id="4" data-name="Chicken Burger" data-price="179">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="E:\BurgerOrder\images\mahraja-burger.jpg" alt="Maharaja Burger">
+                <h3>Maharaja Burger</h3>
+                <p>Double patty, double cheese, veggies, and special sauce</p>
+                <div class="price">₹199</div>
+                <button class="add-to-cart" data-id="5" data-name="Maharaja Burger" data-price="199">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="E:\BurgerOrder\images\paneer-tikka-burger.jpg" alt="Paneer Burger">
+                <h3>Paneer Tikka Burger</h3>
+                <p>Grilled paneer tikka, mint chutney, onions, and spices</p>
+                <div class="price">₹169</div>
+                <button class="add-to-cart" data-id="6" data-name="Paneer Tikka Burger" data-price="169">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Burger Mahal has been serving the juiciest, most delicious burgers since 2015. We use only the freshest ingredients and highest quality products to create our mouth-watering burgers with an Indian twist.</p>
+        <p>Our mission is to deliver happiness one burger at a time across India!</p>
+    </section>
+
+
+
+
+
+
+    <div class="location-finder">
+        <h3>Find Our Nearest Outlet</h3>
+        <select id="city-selector">
+            <option value="">Select your city</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+        </select>
+        <div id="location-result"></div>
+    </div>
+
+
+
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Order</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cart-total">0</span></strong>
+            </div>
+            <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-cards">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Best burgers in town! The paneer tikka burger is amazing."</p>
+                <div class="customer">- Rohan Sharma</div>
+            </div>
+            <!-- Add more reviews -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2023 Burger Mahal. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/burgerkingindia/"><i class="fab fa-facebook"></i></a>
+            <!-- <a href="#"><i class="fab fa-whatsapp"></i></a> -->
+            <a href="https://www.instagram.com/satyajitmishra9348/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="payment-methods">
+            <p>We accept:</p>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fas fa-rupee-sign"></i>
+            <i class="fas fa-qrcode"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
